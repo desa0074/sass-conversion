@@ -1,21 +1,8 @@
 // main SASS file
+
 @import '_mixins';
 @import '_queries';
 @import '_variables';
-
-
-/***********************************************
-                NOTES
-light blue  #C7F7FF
-med blue    #89C0C9
-dark blue   #3a5E63
-light brown #C9A689
-dark brown  #7C593C
-light grey  #d4d4d4
-dark grey   #222
-
-                DEFAULTS
-***********************************************/
 
 *{
     padding:0;
@@ -54,10 +41,10 @@ ul{
 ***********************************************/
 .bg-header{
     background-color: #fff;
-    background-color:#C7F7FF;
-    color: #222;
-    border-bottom:1rem solid #89C0C9;
-    border-top:1rem solid #3a5E63;
+    background-color:$light_blue;
+    color: $dark_grey;
+    border-bottom:1rem solid $med_blue;
+    border-top:1rem solid $dark_blue;
     position: relative;
 }
 .bg-header:before,
@@ -67,7 +54,7 @@ ul{
     bottom:-1rem;
     width:30%;
     height:1rem;
-    background-color: #3a5E63;
+    background-color: $dark_blue;
 }
 .bg-header:before{
     left:0;
@@ -76,20 +63,20 @@ ul{
     right:0;
 }
 .bg-focal{
-    background-color: #C9A689;
-    color: #7C593C;
+    background-color: $light_brown;
+    color: $dark_brown;
 }
 .bg-content1{
     background-color: #fff;
-    color: #222;
+    color: $dark_grey;
 }
 .bg-content2{
-    background-color: #C7F7FF;
-    color: #3a5E63;
+    background-color: $light_blue;
+    color: $dark_blue;
 }
 .bg-footer{
     background-color: #fff;
-    color: #d4d4d4;
+    color: $light_grey;
 }
 header{
     width: 400px; /* default */
@@ -124,7 +111,7 @@ section.content2{
     width:50%;
     float:left;
     padding-bottom: 2rem;
-    border-left:1px solid #3a5E63;
+    border-left:1px solid $dark_blue;
     margin-bottom: 2rem;
 }
 footer .col-2:first-child{
@@ -146,10 +133,10 @@ header nav>ul>li>a{
     display:block;
     text-align: center;
     text-decoration: none;
-    color: #222;    
+    color: $dark_grey;    
     font-size: 1.414rem;
     letter-spacing: 0.25rem;
-    border:1px solid #d4d4d4; 
+    border:1px solid $light_grey; 
     border-bottom: none;
     padding:1.0rem 2rem;
     line-height: 1;
@@ -157,14 +144,14 @@ header nav>ul>li>a{
 }
 header nav>ul>li>a:hover{
     font-weight: 700;
-    color:#7C593C;
+    color:$dark_brown;
 }
 
 /***********************************************
                 CONTENT
 ***********************************************/
 header h1{
-    color: #7C593C;
+    color: $dark_brown;
     letter-spacing: 0.1rem;
 }
 header h1 i.fa-lg{
@@ -173,7 +160,7 @@ header h1 i.fa-lg{
     float:left;
     font-size: 7rem;
     line-height: 12.7936rem;
-    color: #C9A689;
+    color: $light_brown;
 }
 header h1 i.fa-lg ~ span{
     float: right;
@@ -228,15 +215,15 @@ header h1 i.fa-lg ~ span{
 footer h4{
     font-size: 1.414rem;
     padding: 0.5rem 2rem;
-    color: #7C593C;
+    color: $dark_brown;
 }
 footer p{
     font-size: 1rem;
     padding: 0.5rem 2rem;
-    color: #222;
+    color: $dark_grey;
 }
 footer .fa-circle{
-    color: #222;
+    color: $dark_grey;
 }
 footer h4[lang=de]{
    display:block;
@@ -259,7 +246,7 @@ footer h4[lang=ru]{
     }
     header h1{
         width: 100%;
-        color: #7C593C;
+        color: $dark_brown;
     }
     header:before,
     header:after{
@@ -267,7 +254,7 @@ footer h4[lang=ru]{
     }
     header h1 i.fa-lg{
         display:inline;
-        color: #7C593C;
+        color: $dark_brown;
         vertical-align:baseline;
         float:none;
         font-size: 4rem;
@@ -297,12 +284,12 @@ footer h4[lang=ru]{
         line-height: 2rem;
         min-height: 6rem;
         border:none;
-        border-left:1px solid #d4d4d4; 
+        border-left:1px solid $light_grey; 
         padding:1.0rem;
         background-color: #fff;
     }
     header nav>ul>li>a:last-child{
-        border-right:1px solid #d4d4d4;
+        border-right:1px solid $light_grey;
     }
     section.focal, 
     section.content1,
@@ -322,7 +309,7 @@ footer h4[lang=ru]{
         font-size: 1.414rem;
     }
     footer .fa-circle{
-        color: #89C0C9;
+        color: $med_blue;
     }
     footer .col-2:last-child{
         unicode-bidi: bidi-override;
@@ -351,11 +338,11 @@ footer h4[lang=ru]{
     }
     header h1{
         width: 100%;
-        color: #3a5E63;
+        color: $dark_blue;
     }
     header h1 i.fa-lg{
         display:inline;
-        color: #3a5E63;
+        color: $dark_blue;
         vertical-align:baseline;
         float:none;
         font-size: 4rem;
@@ -386,7 +373,7 @@ footer h4[lang=ru]{
         line-height: 2rem;
         min-height: 2rem;
         border:none;
-        border-left:1px solid #d4d4d4; 
+        border-left:1px solid $light_grey; 
         padding: 0 1.0rem;
         margin: 1.0rem 0;
         background-color: #fff;
@@ -445,7 +432,7 @@ footer h4[lang=ru]{
         font-weight: 400;
     }
     footer .fa-circle{
-        color: #C9A689;
+        color: $light_brown;
     }
     footer h4[lang=ru]{
        display:block; 
@@ -469,11 +456,11 @@ footer h4[lang=ru]{
     }
     header h1{
         width: 100%;
-        color: #7C593C;
+        color: $dark_brown;
     }
     header h1 i.fa-lg{
         display:inline;
-        color: #7C593C;
+        color: $dark_brown;
         vertical-align:baseline;
         float:none;
         font-size: 4rem;
@@ -504,7 +491,7 @@ footer h4[lang=ru]{
         line-height: 2rem;
         min-height: 2rem;
         border:none;
-        border-left:1px solid #d4d4d4; 
+        border-left:1px solid $light_grey; 
         padding:0 1.0rem;
         margin:1.0rem 0;
         background-color: #fff;
@@ -568,11 +555,11 @@ footer h4[lang=ru]{
         font-size: 1.414rem;
         letter-spacing: 0.2rem;
     }
-    footer p:last-child{
-        color: #d4d4d4;
+    footer p:last-child{ 
+        color: $light_grey; 
     }
     footer .fa-circle{
-        color: #89C0C9;
+        color: $med_blue;
     }
     
     footer h4[lang=en]{
