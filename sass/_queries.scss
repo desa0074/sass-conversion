@@ -85,9 +85,6 @@ $width_large: 1400px;
                     @include extend_a;
                     @include fontsize_padding($content_font_size, 1.0rem);
                     min-height: 6rem;
-                    &:last-child {
-                        border-right: 1px solid $light_grey;
-                    }
                 }
             }
         }
@@ -239,11 +236,6 @@ $width_large: 1400px;
                     @include fontsize_padding($regular_font_size, 0 1.0rem);
                     min-height: 2rem;
                     margin: 1.0rem 0;
-                }
-                &:first-child {
-                    a {
-                        border-left: none;
-                    }
                 }
             }
         }
