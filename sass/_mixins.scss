@@ -19,6 +19,8 @@
     margin: $margin;
 }
 
+// MIXIN FOR COLUMN WIDTH
+
 @mixin col-x {
     @for $i from 1 through 4 {
         $width: percentage(1 / $i);

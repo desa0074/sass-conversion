@@ -11,7 +11,7 @@
     @include box-sizing(border-box);
 }
 *:after, 
-*:before{
+*:before{ 
     @include box-sizing(inherit);
 }
 html{
@@ -108,6 +108,9 @@ section{
 }
 [class*="col-"] {
 	float: left;
+    &:first-child{
+        margin-left: 0px;
+    }
 }
 @include col-x;
 
@@ -132,7 +135,7 @@ header{
     nav{
         padding:2rem 0;
         clear: both;
-        ul > li > a{
+        ul li a{
             display:block;
             text-align: center;
             text-decoration: none;
@@ -228,12 +231,12 @@ footer{
     .fa-circle{
         color: $dark_grey;
     }
-    footer h4[lang=de]{
+    h4[lang=de]{
        display:block;
     }
-    footer h4[lang=en],
-    footer h4[lang=ar],
-    footer h4[lang=ru]{
+    h4[lang=en],
+    h4[lang=ar],
+    h4[lang=ru]{
         display:none;
     }
 }

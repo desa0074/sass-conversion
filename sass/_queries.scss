@@ -2,17 +2,17 @@ $width_small: 700px;
 $width_medium: 900px;
 $width_large: 1400px;
 @mixin respond_to($media) {
-    @if $media==small_screen {
+    @if $media == small_screen {
         @media all and (min-width: $width_small + 1) and (max-width: $width_medium) {
             @content;
         }
     }
-    @else if $media==medium_screen {
+    @else if $media == medium_screen {
         @media all and (min-width: $width_medium + 1) and (max-width: $width_large) {
             @content;
         }
     }
-    @else if $media==wide_screen {
+    @else if $media == wide_screen {
         @media all and (min-width: $width_large + 1) {
             @content;
         }
@@ -194,16 +194,10 @@ $width_large: 1400px;
     .col-3 {
         width: 30%;
         margin-left: 5%;
-        &:first-child {
-            margin-left: 0;
-        }
     }
     .col-4 {
         width: 22%;
         margin-left: 4%;
-        &:first-child {
-            margin-left: 0;
-        }
     }
     footer {
         .fa-circle {
